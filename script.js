@@ -91,3 +91,32 @@ function getTimeRemaining(endtime){
 
     setClock('timer', deadline);
 });
+
+
+//modal
+
+let more = document.querySelector('.more'),
+overlay = document.querySelector('.overlay'),
+close = document.querySelector('.popup-close');
+
+more.addEventListener('click', function(){
+    overlay.style.display = 'block';
+    this.classList.add('more-splash');
+    document.body.style.overflow = 'hidden';
+});
+
+
+close.addEventListener('click', function(){
+    overlay.style.display = 'none';
+    more.classList.add('more-splash');
+    document.body.style.overflow = '';
+});
+
+// Second
+// let age = document.getElementById('age');
+ 
+// function showUser(surname, name) {
+//          alert("Пользователь " + surname + " " + name + ", его возраст " + this.value);
+// }
+ 
+// showUser.apply(age, ["Горький","Максим"]);
