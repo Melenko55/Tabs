@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function(){
         }
     }
 
-    info.addEventListener('click', function(e){
+    info.addEventListener('click', (e) => {
         let target = e.target;
         if(target && target.classList.contains('info-header-tab')){
             for(let i = 0; i < tab.length; i++){
@@ -99,14 +99,14 @@ let more = document.querySelector('.more'),
 overlay = document.querySelector('.overlay'),
 close = document.querySelector('.popup-close');
 
-more.addEventListener('click', function(){
+more.addEventListener('click', () => {
     overlay.style.display = 'block';
     this.classList.add('more-splash');
     document.body.style.overflow = 'hidden';
 });
 
 
-close.addEventListener('click', function(){
+close.addEventListener('click', () => {
     overlay.style.display = 'none';
     more.classList.add('more-splash');
     document.body.style.overflow = '';
