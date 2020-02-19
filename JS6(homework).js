@@ -15,6 +15,6 @@ class Options{
     }
 }
 
-const div1 = new Options(50, 50, "green", 15, "center");
+const div1 = new Options(500, 50, "green", 15, "center");
 
 div1.addDiv();
